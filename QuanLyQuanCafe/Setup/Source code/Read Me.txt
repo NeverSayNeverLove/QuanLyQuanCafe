@@ -1,0 +1,4 @@
+C1:
+	Cài đặt Visual Studio 
+	Thêm các file .dll tại mục Reference
+C2: Tuỳ ý lựa chọn theo cách đã biết để đọc file.cs và .xaml

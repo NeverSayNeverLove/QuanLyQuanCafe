@@ -1,0 +1,199 @@
+﻿<Window x:Class="QuanLyQuanCafe.Information"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Information" Height="700" Width="1200" WindowStartupLocation="CenterScreen" WindowState="Maximized" Icon="ResourceImage/Album1/file notes document.1.2.png" Background="Green" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#2c3e50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <Button Name="btThuNgan" Content="Thu Ngân" Grid.Column="0" BorderThickness="0" Background="#2c3e50" Foreground="#bdc3c7"/>
+            <Button Name="btQuanLyBan" Content="Quản Lý Bàn" Grid.Column="1" BorderThickness="0" Click="btQuanLyBan_Click" Background="#2c3e50" Foreground="#bdc3c7"/>
+            <Button Name="btQuanLyThucDon" Content="Quản Lý Thực Đơn" Grid.Column="2" BorderThickness="0" Click="btQuanLyThucDon_Click" Background="#2c3e50" Foreground="#bdc3c7"/>
+            <Button Name="btQuanLyNhanVien" Content="Quản Lý Nhân Viên" Grid.Column="3" BorderThickness="0"  Click="btQuanLyNhanVien_Click" Background="#2c3e50" Foreground="#bdc3c7"/>
+            <Button Name="btThongKe" Content="Thống Kê" Grid.Column="4" BorderThickness="0"  Click="btThongKe_Click" Background="#2c3e50" Foreground="#bdc3c7"/>
+
+            <Button Name="btTroGiup" Content="Trợ Giúp" Grid.Column="5" BorderThickness="0" Click="btTroGiup_Click" Background="#2c3e50" Foreground="#bdc3c7"/>
+            <TextBlock Grid.Column="7" />
+        </Grid>
+        <GroupBox Grid.Row="1" BorderThickness="0" Background="#34495e">
+            <Grid  Background="#34495e">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="3*"/>
+                    <!--<RowDefinition Height="*"/>-->
+                </Grid.RowDefinitions>
+                <GroupBox Header="Thông tin bàn: " Grid.Row="0" FontSize="20" BorderBrush="#e67e22" BorderThickness="0" Foreground="#ecf0f1" Margin="5" FontFamily="Brush Script MT">
+                    <GroupBox.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF34495E" Offset="0"/>
+                            <GradientStop Color="#FF9B59B6" Offset="1"/>
+                        </LinearGradientBrush>
+                    </GroupBox.Background>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <CheckBox Name="cbBan101" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 101" IsChecked="False" Checked="ban101checked" Unchecked="ckBan101unchecked" Foreground="#bdc3c7"/>
+                        <!--<Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 101" Foreground="#bdc3c7"/>-->
+                        <CheckBox Name="cbBan102" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 102" IsChecked="False" Unchecked="ckBan102unchecked" Checked="ckban102checked" Foreground="#bdc3c7"/>
+                        <CheckBox Name="cbBan103" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 103" IsChecked="False" Checked="ckban103checked" Unchecked="ckban103unchecked" Foreground="#bdc3c7"/>
+                        <CheckBox Name="cbBan104" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 104" IsChecked="False" Checked="ckban104checked" Unchecked="ckban104unchecked" Foreground="#bdc3c7"/>
+                        <CheckBox Name="cbBan105" Grid.Row="1" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 105" IsChecked="False" Unchecked="ckban105unchecked" Checked="ckban105checked" Foreground="#bdc3c7"/>
+                        <CheckBox Name="cbBan106" Grid.Row="1" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 106" IsChecked="False" Unchecked="ckban106unchecked" Checked="ckban106checked" Foreground="#bdc3c7"/>
+                        <CheckBox Name="cbBan107" Grid.Row="1" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 107" IsChecked="False" Checked="ckban107checked" Unchecked="ckban107unchecked" Foreground="#bdc3c7"/>
+                        <CheckBox Name="cbBan108" Grid.Row="1" Grid.Column="7" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 108" IsChecked="False" Unchecked="ckban108unchecked" Checked="ckban108checked" Foreground="#bdc3c7"/>
+                        <CheckBox Name="cbBan109" Grid.Row="1" Grid.Column="8" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 109" IsChecked="False" Checked="ckban109checked" Unchecked="ckban109unchecked" Foreground="#bdc3c7"/>
+                        <CheckBox Name="cbBan110" Grid.Row="1" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 110" IsChecked="False" Unchecked="ckban110unchecked" Checked="ckban110checked" Foreground="#bdc3c7"/>
+                        <CheckBox Name="cbBan201" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 201" IsChecked="False" Checked="ckban201checked" Unchecked="ckban201unchecked" Foreground="#bdc3c7"/>
+                        <CheckBox Name="cbBan202" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 202" IsChecked="False" Unchecked="ckban202unchecked" Checked="ckban202checked" Foreground="#bdc3c7"/>
+                        <CheckBox Name="cbBan203" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 203" IsChecked="False" Checked="ckban203checked" Unchecked="ckban203unchecked" Foreground="#bdc3c7"/>
+                        <CheckBox Name="cbBan204" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 204" IsChecked="False" Unchecked="ckban204unchecked" Checked="ckban204checked"  Foreground="#bdc3c7"/>
+                        <CheckBox Name="cbBan205" Grid.Row="3" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 205" IsChecked="False" Checked="ckban205checked" Unchecked="ckban205unchecked" Foreground="#bdc3c7"/>
+                        <CheckBox Name="cbBan206" Grid.Row="3" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 206" IsChecked="False" Unchecked="ckban206unchecked" Checked="ckban206checked"  Foreground="#bdc3c7"/>
+                        <CheckBox Name="cbBan207" Grid.Row="3" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 207" IsChecked="False" Checked="ckban207checked" Unchecked="ckban207unchecked" Foreground="#bdc3c7"/>
+                        <CheckBox Name="cbBan208" Grid.Row="3" Grid.Column="7" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 208" IsChecked="False" Unchecked="ckban208unchecked" Checked="ckban208checked" Foreground="#bdc3c7"/>
+                        <CheckBox Name="cbBan209" Grid.Row="3" Grid.Column="8" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 209" IsChecked="False" Checked="ckban209checked" Unchecked="ckban209unchecked" Foreground="#bdc3c7"/>
+                        <CheckBox Name="cbBan210" Grid.Row="3" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Bàn 210" IsChecked="False" Unchecked="ckban210unchecked" Checked="ckban210checked" Foreground="#bdc3c7"/>
+                        <Image Name="imBan101" Grid.Row="0" Grid.Column="0" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image Name="imBan102" Grid.Row="0" Grid.Column="1" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image Name="imBan103" Grid.Row="0" Grid.Column="2" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image Name="imBan104" Grid.Row="0" Grid.Column="3" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image Name="imBan105" Grid.Row="0" Grid.Column="4" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image Name="imBan106" Grid.Row="0" Grid.Column="5" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image Name="imBan107" Grid.Row="0" Grid.Column="6" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image Name="imBan108" Grid.Row="0" Grid.Column="7" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image Name="imBan109" Grid.Row="0" Grid.Column="8" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image  Name="imBan110" Grid.Row="0" Grid.Column="9" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image Name="imBan201" Grid.Row="2" Grid.Column="0" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image Name="imBan202" Grid.Row="2" Grid.Column="1" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image  Name="imBan203" Grid.Row="2" Grid.Column="2" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image  Name="imBan204" Grid.Row="2" Grid.Column="3" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image Name="imBan205" Grid.Row="2" Grid.Column="4" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image Name="imBan206" Grid.Row="2" Grid.Column="5" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image Name="imBan207" Grid.Row="2" Grid.Column="6" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image Name="imBan208" Grid.Row="2" Grid.Column="7" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image  Name="imBan209" Grid.Row="2" Grid.Column="8" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                        <Image Name="imBan210" Grid.Row="2" Grid.Column="9" Source="ResourceImage/Album1/cup-icon.png" Margin="12"/>
+                    </Grid>
+                </GroupBox>
+                <GroupBox Header="Thông tin thực đơn:" Grid.Row="1" FontSize="15" Foreground="White" BorderThickness="0" >
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TreeView Grid.Column="1" BorderThickness="0" Background="#34495e" Foreground="#ecf0f1">
+                            <TreeViewItem Header="Đồ uống" Foreground="#ecf0f1">
+                                <TreeViewItem Header="Cafe" Foreground="#ecf0f1">
+                                    <TreeViewItem Header="Filter Coffee" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Instant Coffee" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Latte" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Espresso" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Cappuccino" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Mocha" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Skinny Coffee" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Extra shot" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Nonfat" Foreground="#ecf0f1"/>
+                                </TreeViewItem>
+                                <TreeViewItem Header="Trà Sữa" Foreground="#ecf0f1">
+                                    <TreeViewItem Header="Trà Sữa Bumba" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Trà Sữa Trân Châu" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Trà Sữa Mật Ong" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Trà Sữa Chanh Dây" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Trà Sữa Bạc Hà" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Trà Sữa Táo Xanh" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Trà Sữa Dâu" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Trà Sữa Dưa Lưới" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Trà Sữa Đào" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Trà Sữa Kiwi" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Trà Sữa Nho" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Trà Sữa Vải" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Trà Sữa Khoai Môn" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Trà Sữa Socola" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Trà Sữa Trà Xanh" Foreground="#ecf0f1"/>
+                                </TreeViewItem>
+                                <TreeViewItem Header="Nước Ngọt" Foreground="#ecf0f1">
+                                    <TreeViewItem Header="Cocacola" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Pepsi" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="7Up" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="RedBull" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Fanta" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Trà Ô Long Tea Plus" Foreground="#ecf0f1"/>
+                                    <TreeViewItem Header="Nước Lọc" Foreground="#ecf0f1"/>
+                                </TreeViewItem>
+                            </TreeViewItem>
+                        </TreeView>
+
+                        <DataGrid Name="datagridviewThuNgan1" Grid.Column="0" IsReadOnly="True" BorderThickness="0"/>
+
+
+                    </Grid>
+                </GroupBox>
+                <GroupBox Header="Thông tin bàn chọn:" Grid.Row="2" FontSize="15" BorderThickness="0" Foreground="White">
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <DataGrid Grid.Column="0" Name="datagridviewThuNgan2" BorderThickness="0"/>
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Button Grid.Row="0" Name="btTinhTien" Content="Tính Tiền" BorderThickness="0" Background="#2c3e50" Foreground="#BDc3c7" Click="btTinhTien_Click"/>
+                            <Button Grid.Row="1" Name="btInHoaDon" Content="In Hoá Đơn" BorderThickness="0" Background="#2c3e50" Foreground="#BDc3c7" Click="btInHoaDon_Click"/>
+                            <Button Grid.Row="2" Name="btHuyGoiMon" Content="Huỷ Gọi Món" BorderThickness="0" Background="#2c3e50" Foreground="#BDc3c7" Click="btHuyGoiMon_Click"/>
+                            <Button Grid.Row="3" Name="btNo" Content="Thanh Toán Sau" BorderThickness="0" Background="#2c3e50" Foreground="#BDc3c7" Click="btNo_Click"/>
+                            <Button Grid.Row="4" Name="btThongTinKhachHang" Content="Thông Tin Khách Hàng" BorderThickness="0" Background="#2c3e50" Foreground="#BDc3c7" Click="btThongTinKhachHang_Click"/>
+                        </Grid>
+                    </Grid>
+                </GroupBox>
+                <Grid Grid.Row="3" Grid.RowSpan="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="6*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Name="tblThuNganMaPhieu" Grid.Column="1" Margin="5,20,5,20" Foreground="#BDc3c7"/>
+                    <TextBlock Grid.Column="4" Name="tblThuNganTien" Margin="5,20,5,20" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

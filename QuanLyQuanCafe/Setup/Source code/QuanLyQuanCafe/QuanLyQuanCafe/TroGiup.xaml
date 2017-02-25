@@ -1,0 +1,55 @@
+﻿<Window x:Class="QuanLyQuanCafe.TroGiup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Trợ Giúp" Name="wTroGiup" Height="500" Width="500" WindowStartupLocation="CenterScreen" Icon="ResourceImage/Album1/user headphone.3.png" Topmost="false" ResizeMode="NoResize">
+        <Grid Background="#FF232222">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="12*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="1.5*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="Student Information" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" FontSize="20" Foreground="White"/>
+            <Label Grid.Row="0" Grid.Column="1" Content="Product Information" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" FontSize="20" Foreground="White"/>
+
+            <Grid Grid.Row="1" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="10*"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Content="Đặng Như Thuỷ" FontSize="15" Foreground="White"/>
+            <Label Grid.Row="1" Content="Trần Minh Quang" FontSize="15" Foreground="White"/>
+            <Label Grid.Row="2" Content="Trịnh Văn Đại" FontSize="15" Foreground="White"/>
+            <Label Grid.Row="3" Content="Lớp: Việt Nhật - K59" FontSize="15" Foreground="White"/>
+            </Grid>
+
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                
+                    <RowDefinition Height="6*"/>
+                </Grid.RowDefinitions>
+            <Label Grid.Row="0" Content="Quản Lý Quán Cafe" FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.ColumnSpan="2" Foreground="#FFD80F0F"/>
+                <Label Grid.Row="1" Content="License: Product key applied" FontSize="15" Grid.ColumnSpan="2" Foreground="White"/>
+                <Label Grid.Row="2" Content="Version: 1.0" FontSize="13" Grid.ColumnSpan="2" Foreground="White"/>
+                <TextBlock Grid.Row="3">
+                    <Hyperlink FontSize="13"  NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate" >
+                        <!--<Run Text="Help"/>-->
+                        Help
+                    </Hyperlink>
+                </TextBlock>
+            <Label Grid.Row="4" Content="Liên Hệ: Đặng Như Thuỷ - SĐT: 0987040854" Foreground="White" FontSize="14"/>
+            <Label Grid.Row="5" Content="Email: 20144373@student.hust.edu.vn" Foreground="White" FontSize="14"/>
+        </Grid>
+        </Grid>
+</Window>

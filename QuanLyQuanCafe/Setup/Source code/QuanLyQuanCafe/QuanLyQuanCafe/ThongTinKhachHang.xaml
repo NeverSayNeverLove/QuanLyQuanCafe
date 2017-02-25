@@ -1,0 +1,51 @@
+﻿<Window x:Class="QuanLyQuanCafe.ThongTinKhachHang"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ThongTinKhachHang" Height="250" Width="400" WindowStartupLocation="CenterScreen" Icon="ResourceImage/Album1/cup-icon.png">
+    <Grid Background="#2c3e50">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="1.5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Grid.Column="0" Grid.Row="0" Content="Tên Khách Hàng" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Foreground="#bdc3c7"/>
+            <Label Grid.Column="0" Grid.Row="1" Content="Địa Chỉ" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Foreground="#bdc3c7"/>
+            <Label Grid.Column="0" Grid.Row="2" Content="Số Điện Thoại" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Foreground="#bdc3c7"/>
+            <TextBox Grid.Column="1" Grid.Row="0" Name="ThongtinkhachhangtbTenKH" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="10"/>
+            <TextBox Grid.Column="1" Grid.Row="1" Name="ThongtinkhachhangtbDiaChi" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="10"/>
+            <TextBox Grid.Column="1" Grid.Row="2" Name="ThongtinkhachhangtbSDT" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="10"/>
+        </Grid>
+        <Grid Grid.Row="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Name="ThongtinkhachhangbtOK" Content="OK" FontSize="15" BorderThickness="0,0,1,0" Click="ThongtinkhachhangbtOK_Click" Foreground="#bdc3c7">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF34495E" Offset="0"/>
+                        <GradientStop Color="#FF9B59B6" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Grid.Column="1" Name="ThongtinkhachhangbtCancel" Content="Cancel" FontSize="15" BorderThickness="0" Click="ThongtinkhachhangbtCancel_Click"  Foreground="#bdc3c7">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF34495E" Offset="0"/>
+                        <GradientStop Color="#FF9B59B6" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
